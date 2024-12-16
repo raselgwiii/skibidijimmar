@@ -1,0 +1,198 @@
+/* Custom Pagination Styles */
+.pagination {
+    margin: 20px 0;
+}
+
+.page-item {
+    margin: 0 2px;
+}
+
+.page-link {
+    border-radius: 4px !important;
+    padding: 8px 16px;
+    color: #1ab394;
+    border: 1px solid #e7eaec;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #1ab394;
+    color: white;
+    border-color: #1ab394;
+}
+
+.page-item.active .page-link {
+    background-color: #1ab394;
+    border-color: #1ab394;
+}
+
+.page-item.disabled .page-link {
+    color: #999;
+    background-color: #fff;
+    border-color: #e7eaec;
+}
+
+/* Fix for Font Awesome icons in pagination */
+.page-link .fa {
+    font-size: 12px;
+}
+
+/* Dashboard Stats Cards */
+.stats-card {
+    transition: transform 0.2s;
+}
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Card Styling */
+.product-card {
+    transition: transform 0.2s ease-in-out;
+    background: #fff;
+    border: none !important;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+.product-image-wrapper {
+    position: relative;
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.product-image-wrapper img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    border-radius: 0 0 8px 8px;
+}
+
+.badge {
+    padding: 0.5em 0.8em;
+    border-radius: 4px;
+}
+
+.product-image-wrapper {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-card .price {
+    color: #1ab394;
+    font-size: 1.1rem;
+}
+
+.product-card .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2f4050;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.stock-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+    color: white;
+}
+
+.category-badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #6c757d;
+    font-size: 0.8rem;
+}
+
+/* Category Pills */
+.category-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    color: #495057;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid #dee2e6;
+}
+
+.category-pill:hover {
+    background-color: #e9ecef;
+    color: #212529;
+    text-decoration: none;
+}
+
+.category-pill.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.category-pill.active .badge {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+.category-pill i {
+    margin-right: 6px;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-image-wrapper {
+        height: 150px;
+    }
+}
